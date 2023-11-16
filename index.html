@@ -12,10 +12,57 @@
       src: url(/public/Geist-Thin.woff2)format("woff2");
       font-weight: 100;
     }
+
     @font-face {
       font-family: "Geist";
       src: url(/public/Geist-Light.woff2)format("woff2");
       font-weight: 300;
+    }
+
+    @font-face {
+      font-family: "Geist";
+      src: url(/public/Geist-Regular.woff2)format("woff2");
+      font-weight: 400;
+    }
+
+    @keyframes cycle {
+      0% {
+        content: "ship quality software.";
+      }
+
+      33% {
+        content: "level up your build process.";
+      }
+
+      66% {
+        content: "upskill your team."
+      }
+
+      100% {
+        content: "ship quality software.";
+      }
+    }
+
+    @keyframes blur {
+      0% {
+        filter: blur(0px);
+      }
+
+      45% {
+        filter: blur(0px);
+      }
+
+      50% {
+        filter: blur(16px);
+      }
+
+      55% {
+        filter: blur(0px);
+      }
+
+      100% {
+        filter: blur(0px);
+      }
     }
   </style>
 </head>
@@ -34,8 +81,7 @@
             I am the person you are looking for<br />
             if you want to
             <span
-              class="bg-gradient-to-br from-red-700 to-purple-600 bg-clip-text text-transparent tracking-tight [text-shadow:_0_0_10px_rgb(255_255_255_/_20%)] font-light">ship
-              quality software.</span>
+              class="bg-gradient-to-br from-rose-400 to-purple-800 bg-clip-text text-transparent font-normal tracking-tighter [text-shadow:_0_0_10px_rgb(255_255_255_/_20%)] font-light after:animate-[cycle_18s_ease-in-out_infinite] animate-[blur_6s_ease-in-out_infinite]"></span>
           </p>
           <section class="pt-[12vw]">
             <div>Professional experience</div>
