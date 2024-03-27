@@ -556,12 +556,12 @@ video {
   top: 0px;
 }
 
-.ml-\[4vw\] {
-  margin-left: 4vw;
-}
-
 .ml-\[7vw\] {
   margin-left: 7vw;
+}
+
+.ml-\[8vw\] {
+  margin-left: 8vw;
 }
 
 .mt-\[1vw\] {
@@ -650,10 +650,6 @@ video {
   padding-bottom: 20vw;
 }
 
-.pl-\[calc\(50\%-64px\)\] {
-  padding-left: calc(50% - 64px);
-}
-
 .pt-\[12vw\] {
   padding-top: 12vw;
 }
@@ -666,16 +662,24 @@ video {
   font-family: 'Geist';
 }
 
-.text-\[1\.25vw\] {
-  font-size: 1.25vw;
-}
-
 .text-\[2\.6vw\] {
   font-size: 2.6vw;
 }
 
-.text-\[2vw\] {
-  font-size: 2vw;
+.text-\[3\.5vw\] {
+  font-size: 3.5vw;
+}
+
+.text-\[3vw\] {
+  font-size: 3vw;
+}
+
+.text-\[4vw\] {
+  font-size: 4vw;
+}
+
+.text-\[5vw\] {
+  font-size: 5vw;
 }
 
 .font-normal {
@@ -686,8 +690,8 @@ video {
   font-weight: 100;
 }
 
-.leading-\[2\.2vw\] {
-  line-height: 2.2vw;
+.leading-\[4vw\] {
+  line-height: 4vw;
 }
 
 .tracking-tight {
@@ -735,15 +739,49 @@ video {
   animation: cycle 12s ease-in-out infinite;
 }
 
-.hover\:ml-\[8vw\]:hover {
-  margin-left: 8vw;
-}
-
-.hover\:pl-\[1vw\]:hover {
-  padding-left: 1vw;
+.hover\:pl-\[2vw\]:hover {
+  padding-left: 2vw;
 }
 
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:fixed {
+    position: fixed;
+  }
+
+  .sm\:top-0 {
+    top: 0px;
+  }
+
+  .sm\:ml-\[4vw\] {
+    margin-left: 4vw;
+  }
+
+  .sm\:ml-\[calc\(50\%-64px\)\] {
+    margin-left: calc(50% - 64px);
+  }
+
+  .sm\:text-\[1\.25vw\] {
+    font-size: 1.25vw;
+  }
+
+  .sm\:text-\[2\.6vw\] {
+    font-size: 2.6vw;
+  }
+
+  .sm\:text-\[2vw\] {
+    font-size: 2vw;
+  }
+
+  .sm\:leading-\[2\.2vw\] {
+    line-height: 2.2vw;
+  }
+
+  .sm\:hover\:pl-\[1vw\]:hover {
+    padding-left: 1vw;
+  }
 }
